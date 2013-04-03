@@ -23,20 +23,7 @@ Given this markup:
 
 Use this CSS to specify 3-column layout, changing only the order-x-y-z class in the content wrapper div:
 
-You'll need this for the floated layout clearing problems:
 
-      .clearfix {
-          clear: both;
-      }
-      .clearfix:after {
-          content: ".";
-          visibility: hidden;
-          display: block;
-          height: 0;
-          clear: both;
-      }
-      
-      
       /* main content area */
       .content_wrapper {
       width:100%; /* inherit page_wrapper width */
@@ -158,3 +145,17 @@ You'll need this for the floated layout clearing problems:
       .order-3-2-1 .related_content {
       float:left;
       }
+      
+You'll need this for the floated layout clearing problems:
+
+      .clearfix {
+          clear: both;
+      }
+      .clearfix:after {
+          content: ".";
+          visibility: hidden;
+          display: block;
+          height: 0;
+          clear: both;
+      }
+
