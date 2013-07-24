@@ -9,13 +9,13 @@
       /* contains columns 1 and 2 */
     }
     .main_content {
-      background: red;
+      background: #ffccff;
     }
     .more_content {
-      background: blue;
+      background: #cff9f9;
     }
     .related_content {
-      background: yellow;
+      background: #fff0c0;
     }
     
 
