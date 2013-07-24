@@ -7,7 +7,7 @@
   <body>
     <h1>simple three-column css</h1>
     
-    <div id="" class="clearfix columns order-xyz">
+    <div id="test-columns" class="clearfix columns order-xyz">
       <div class="intercolumn">
         <section class="col-1">
           <h1>1. main section</h1>
@@ -23,6 +23,15 @@
         <p>related paragraph</p>
       </section>
     </div>
-    
+    <script>
+      var test = document.getElementById('test-columns');
+      var order = ['123', '132', '213', '231', '312', '321'];
+      var which = 0;
+      setTimeout(function() {
+          var css = test.getAttribute('class');
+          test.setAttribute('class', css.replace(/order-[\w]{3,3}/, 'order-' + order[which++]));
+        }, 1500);
+        
+    </script>
   </body>
 </html>
