@@ -17,10 +17,10 @@
     .col-3 {
       background: #fff0c0;
     }
-    
+
     /* 3-column layouts for content area */
     .columns {
-  		width: 65em; /* set width to contain intercolumn and .col-3 */
+      	width: 65em; /* set width to contain intercolumn and .col-3 */
     }
     .columns .intercolumn {
       width: 40em; /* set width to contain col-1 and .col-2 */
@@ -143,6 +143,3 @@
       height: 0;
       clear: both;
     }
-
-
-
