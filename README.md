@@ -1,154 +1,161 @@
 simple-3-column-css
 ===================
 
+A cross-browser flexible 3-column layout CSS plus required HTML.
+
+Working examples
+----------------
+
+[simple 3 column layout](http://rawgithub.com/dfkaye/simple-3-column-css/master/index.html)
+
+
 Given this markup:
 
-    <div id="" class="clearfix content_wrapper columns order-x-y-z">
+    <div id="" class="clearfix columns order-XYZ">
       <div class="intercolumn">
-        <section class="main_content">
+        <div class="col-1">
           <h1>1. main section</h1>
           <p>main paragraph</p>
-        </section>
-        <section class="more_content">
+        </div>
+        <div class="col-2">
           <h1>2. more section</h1>
           <p>more paragraph</p>
-        </section>
+        </div>
       </div>
-      <section class="related_content">
+      <div class="col-3">
         <h1>3. related section</h1>
         <p>related paragraph</p>
-      </section>
+      </div>
     </div>
 
 
 Use this CSS to specify 3-column layout, changing only the order-x-y-z class in the content wrapper div:
 
-    /* main content area */
-    .content_wrapper {
-      width:100%; /* inherit page_wrapper width */
+    /* inherit page_wrapper width */
+    .columns {
+      width: 100%; 
     }
     .intercolumn {
       /* contains columns 1 and 2 */
     }
-    .main_content {
-      background: red;
+    .col-1 {
+      background: #ffccff;
     }
-    .more_content {
-      background: blue;
+    .col-2 {
+      background: #cff9f9;
     }
-    .related_content {
-      background: yellow;
+    .col-3 {
+      background: #fff0c0;
     }
     
 
     /* 3-column layouts for content area */
-    .columns {}
     .columns .intercolumn {
       width:710px; /* set width to contain main and more */
     }
-    .columns .main_content {
+    .columns .col-1 {
       width:500px;
     }
-    .columns .more_content {
+    .columns .col-2 {
       width:210px;
     }
-    .columns .related_content {
+    .columns .col-3 {
       width:230px;
     }
 
 
-    /* order-1-2-3 */
-    .order-1-2-3 {}
-    .order-1-2-3 .intercolumn {
+    /* order-123 */
+    .order-123 {}
+    .order-123 .intercolumn {
       float:left;
     }
-    .order-1-2-3 .main_content {
+    .order-123 .col-1 {
       float:left;
     }
-    .order-1-2-3 .more_content {
+    .order-123 .col-2 {
       float:right;
     }
-    .order-1-2-3 .related_content {
+    .order-123 .col-3 {
       float:right;
     }
 
 
-    /* order-1-3-2 */
-    .order-1-3-2 {}
-    .order-1-3-2 .intercolumn {
+    /* order-132 */
+    .order-132 {}
+    .order-132 .intercolumn {
       width:auto; /* unset width for non-contiguous case in IE */
     }
-    .order-1-3-2 .main_content {
+    .order-132 .col-1 {
       float:left;
     }
-    .order-1-3-2 .more_content {
+    .order-132 .col-2 {
       float:right;
     }
-    .order-1-3-2 .related_content {
+    .order-132 .col-3 {
       float:right;
     }
 
 
-    /* order-2-1-3 */
-    .order-2-1-3 {}
-    .order-2-1-3 .intercolumn {
+    /* order-213 */
+    .order-213 {}
+    .order-213 .intercolumn {
       float:left;
     }
-    .order-2-1-3 .main_content {
+    .order-213 .col-1 {
       float:right;
     }
-    .order-2-1-3 .more_content {
+    .order-213 .col-2 {
       float:left;
     }
-    .order-2-1-3 .related_content {
+    .order-213 .col-3 {
       float:right;
     }
 
 
-    /* order-2-3-1 */
-    .order-2-3-1 {}
-    .order-2-3-1 .intercolumn {
+    /* order-231 */
+    .order-231 {}
+    .order-231 .intercolumn {
       width:auto; /* unset width for non-contiguous case in IE */
     }
-    .order-2-3-1 .main_content {
+    .order-231 .col-1 {
       float:right;
     }
-    .order-2-3-1 .more_content {
+    .order-231 .col-2 {
       float:left;
     }
-    .order-2-3-1 .related_content {
+    .order-231 .col-3 {
       float:right;
     }
 
 
-    /* order-3-1-2 */
-    .order-3-1-2 {}
-    .order-3-1-2 .intercolumn {
+    /* order-312 */
+    .order-312 {}
+    .order-312 .intercolumn {
       float:right;
     }
-    .order-3-1-2 .main_content {
+    .order-312 .col-1 {
       float:left;
     }
-    .order-3-1-2 .more_content {
+    .order-312 .col-2 {
       float:left;
     }
-    .order-3-1-2 .related_content {
+    .order-312 .col-3 {
       float:left;
     }
 
 
-    /* order-3-2-1 */
-    .order-3-2-1 {}
-    .order-3-2-1 .intercolumn {
+    /* order-321 */
+    .order-321 {}
+    .order-321 .intercolumn {
       float:right;
     }
-    .order-3-2-1 .main_content {
+    .order-321 .col-1 {
       float:right;
     }
-    .order-3-2-1 .more_content {
+    .order-321 .col-2 {
       float:left;
     }
-    .order-3-2-1 .related_content {
+    .order-321 .col-3 {
       float:left;
     }
       
