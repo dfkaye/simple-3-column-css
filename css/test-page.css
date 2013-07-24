@@ -27,63 +27,65 @@ background: #fff0c0;
 width: 25em;
 }
 
-
 #nested {
 }
 #nested .intercolumn {
-width: auto;
+width: 65%;
 }
 #nested .col-1 {
 background: #cfcfcf;
-width: 50%;
+width: 60%;
 }
 #nested .col-2 {
 background: #ffcc66;
-width: 25%;
+width: 40%;
 }
 #nested .col-3 {
 background: #cc9933;
-width: 25%;
+width: 35%;
 }
 
 #nested-1 {
+width: 100%;
 }
-#nested-1 .intercolumn {
+#nested-1 .columns .intercolumn {
 }
 #nested-1 .col-1 {
-background: #efefef;
+background: #f9f;
 }
 #nested-1 .col-2 {
-background: #efefef;
+background: #c0c0;
 }
 #nested-1 .col-3 {
-background: #efefef;
+background: #9f9;
 }
 
 #nested-2 {
+width: 100%;
 }
-#nested-2 .columns .intercolumn {
-background: #efefef;
+#nested-2 .intercolumn {
 }
 #nested-2 .col-1 {
-background: #efefef;
+background: #ff9;
 }
 #nested-2 .col-2 {
-background: #efefef;
+background: #99f;
 }
 #nested-2 .col-3 {
-background: #efefef;
+background: #cc0;
 }
+
 #nested-3 {
+width: 100%;
 }
 #nested-3 .intercolumn {
 }
 #nested-3 .col-1 {
-background: #efefef;
+background: #963;
 }
 #nested-3 .col-2 {
-background: #efefef;  
+background: #693;  
 }
 #nested-3 .col-3 {
-background: #efefef;
+background: #369;
 }
