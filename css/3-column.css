@@ -21,112 +21,112 @@
 
     /* 3-column layouts for content area */
     .columns .intercolumn {
-      width:710px; /* set width to contain main and more */
+      width: 40em; /* set width to contain main and more */
     }
     .columns .col-1 {
-      width:500px;
+      width: 25em;
     }
     .columns .col-2 {
-      width:210px;
+      width: 15em;
     }
     .columns .col-3 {
-      width:230px;
+      width: 25em;
     }
 
 
     /* order-123 */
     .order-123 {}
     .order-123 .intercolumn {
-      float:left;
+      float: left;
     }
     .order-123 .col-1 {
-      float:left;
+      float: left;
     }
     .order-123 .col-2 {
-      float:right;
+      float: right;
     }
     .order-123 .col-3 {
-      float:right;
+      float: right;
     }
 
 
     /* order-132 */
     .order-132 {}
     .order-132 .intercolumn {
-      width:auto; /* unset width for non-contiguous case in IE */
+      width: auto; /* unset width for non-contiguous case in IE */
     }
     .order-132 .col-1 {
-      float:left;
+      float: left;
     }
     .order-132 .col-2 {
-      float:right;
+      float: right;
     }
     .order-132 .col-3 {
-      float:right;
+      float: right;
     }
 
 
     /* order-213 */
     .order-213 {}
     .order-213 .intercolumn {
-      float:left;
+      float: left;
     }
     .order-213 .col-1 {
-      float:right;
+      float: right;
     }
     .order-213 .col-2 {
-      float:left;
+      float: left;
     }
     .order-213 .col-3 {
-      float:right;
+      float: right;
     }
 
 
     /* order-231 */
     .order-231 {}
     .order-231 .intercolumn {
-      width:auto; /* unset width for non-contiguous case in IE */
+      width:  auto; /* unset width for non-contiguous case in IE */
     }
     .order-231 .col-1 {
-      float:right;
+      float: right;
     }
     .order-231 .col-2 {
-      float:left;
+      float: left;
     }
     .order-231 .col-3 {
-      float:right;
+      float: right;
     }
 
 
     /* order-312 */
     .order-312 {}
     .order-312 .intercolumn {
-      float:right;
+      float: right;
     }
     .order-312 .col-1 {
-      float:left;
+      float: left;
     }
     .order-312 .col-2 {
-      float:left;
+      float: left;
     }
     .order-312 .col-3 {
-      float:left;
+      float: left;
     }
 
 
     /* order-321 */
     .order-321 {}
     .order-321 .intercolumn {
-      float:right;
+      float: right;
     }
     .order-321 .col-1 {
-      float:right;
+      float: right;
     }
     .order-321 .col-2 {
-      float:left;
+      float: left;
     }
     .order-321 .col-3 {
-      float:left;
+      float: left;
     }
       
 /* You'll need this for the floated layout clearing problems: */
@@ -141,4 +141,5 @@
       height: 0;
       clear: both;
     }
+
 
