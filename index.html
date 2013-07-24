@@ -2,6 +2,11 @@
 <html>
   <head>
     <title>simple three-column css</title>
+    <style>
+      .layers {
+        border: 1px dotted #336699;
+      }
+    </style>
     <link rel='stylesheet' href='./css/3-column.css' />
   </head>
   <body>
@@ -11,24 +16,27 @@
         https://github.com/dfkaye/simple-3-column-css
       </a>
     </p>
-    <div id="test-columns" class="clearfix columns order-xyz">
-      <div class="intercolumn">
-        <div class="col-1">
-          <h1>1. main section</h1>
-          <p>main paragraph</p>
+    <div class='layers'>
+      <div id="test-1" class="clearfix columns order-xyz">
+        <div class="intercolumn">
+          <div class="col-1">
+            <h1>1. main section</h1>
+            <p>main paragraph</p>
+          </div>
+          <div class="col-2">
+            <h1>2. more section</h1>
+            <p>more paragraph</p>
+          </div>
         </div>
-        <div class="col-2">
-          <h1>2. more section</h1>
-          <p>more paragraph</p>
+        <div class="col-3">
+          <h1>3. related section</h1>
+          <p>related paragraph</p>
         </div>
-      </div>
-      <div class="col-3">
-        <h1>3. related section</h1>
-        <p>related paragraph</p>
       </div>
     </div>
+  
     <script>
-      var test = document.getElementById('test-columns');
+      var test = document.getElementById('test-1');
       var order = ['123', '132', '213', '231', '312', '321'];
       var which = 0;
       function next() {
