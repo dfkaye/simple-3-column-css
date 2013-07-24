@@ -28,9 +28,10 @@ width: 25em;
 }
 
 #nested {
+
 }
 #nested .intercolumn {
-width: 65%;
+width: 70%;
 }
 #nested .col-1 {
 background: #cfcfcf;
@@ -42,7 +43,7 @@ width: 40%;
 }
 #nested .col-3 {
 background: #cc9933;
-width: 35%;
+width: 30%;
 }
 
 #nested-1 {
@@ -89,3 +90,4 @@ background: #693;
 #nested-3 .col-3 {
 background: #369;
 }
+
