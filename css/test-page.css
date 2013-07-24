@@ -1,0 +1,59 @@
+#nested {
+}
+#nested .intercolumn {
+width: auto;
+}
+#nested .col-1 {
+background: #cfcfcf;
+width: 50%;
+}
+#nested .col-2 {
+background: #ffcc66;
+width: 25%;
+}
+#nested .col-3 {
+background: #cc9933;
+width: 25%;
+}
+
+#nested-1 {
+}
+#nested-1 .intercolumn {
+}
+#nested-1 .col-1 {
+background: #efefef;
+}
+#nested-1 .col-2 {
+background: #efefef;
+}
+#nested-1 .col-3 {
+background: #efefef;
+}
+
+#nested-2 {
+}
+#nested-2 .columns .intercolumn {
+background: #efefef;
+}
+#nested-2 .col-1 {
+background: #efefef;
+}
+#nested-2 .col-2 {
+background: #efefef;
+}
+#nested-2 .col-3 {
+background: #efefef;
+}
+#nested-3 {
+}
+#nested-3 .intercolumn {
+}
+#nested-3 .col-1 {
+background: #efefef;
+}
+#nested-3 .col-2 {
+background: #efefef;  
+}
+#nested-3 .col-3 {
+background: #efefef;
+}
