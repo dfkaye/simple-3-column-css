@@ -5,6 +5,7 @@
     <link rel='stylesheet' href='./css/3-column.css' />
     <style>
 /* overrides for specific page layout */
+/* overrides for specific page layout */
       .layers {
         margin: 5em 1.5em;
       }
@@ -38,7 +39,7 @@
 }
 .nested-1 .intercolumn {
 }
-.nested-1 .col-1 {
+.nested-1 .columns .col-1 {
         background: #efefef;
 
 }
@@ -52,7 +53,7 @@
 }
 .nested-2 {
 }
-.nested-2 .intercolumn {
+.nested-2 .columns .intercolumn {
     background: #efefef;
 
 }
@@ -80,7 +81,7 @@
 }
 .nested-3 .col-3 {
   background: #efefef;
-}    
+}   
     </style>
   </head>
   <body>
@@ -189,7 +190,7 @@
         }
         ++which < order.length || (which = 0);
       }
-      var loop = setInterval(next, 1500);
+      var loop = setTimeout(next, 1500);
         
     </script>
   </body>
