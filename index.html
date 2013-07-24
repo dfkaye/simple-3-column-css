@@ -28,7 +28,7 @@
       var order = ['123', '132', '213', '231', '312', '321'];
       var which = 0;
       function next() {
-        test.className = test.className.replace(/order-[\w]{3,3}/, 'order-' + order[which++]));
+        test.className = test.className.replace(/order-[\w]{3,3}/, 'order-' + order[which++]);
         which < order.length || (which = 0);
       }
       var loop = setInterval(next, 1500);
