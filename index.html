@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>simple three-column css</title>
-    <link rel='stylesheet' href='./css/3-column.css' />
+    <link rel='stylesheet' href='css/3-column.css' />
     <!--<style type='text/css'>
 /* overrides for specific page layout */
 .layers {
@@ -101,12 +101,15 @@
   </head>
   <body>
     <h1>simple three-column css</h1>
+    
     <p>view the repo at 
       <a href='https://github.com/dfkaye/simple-3-column-css'>
         https://github.com/dfkaye/simple-3-column-css
       </a>
     </p>
+    
     <div class='layers'>
+    
       <div id="test-1" class="clearfix columns order-xyz">
         <div class="intercolumn">
           <div class="col-1">
@@ -188,6 +191,7 @@
     </div>
   
     <script>
+    
       var tests = [
         document.getElementById('test-1'),
         document.getElementById('nested'),
@@ -195,8 +199,11 @@
         document.getElementById('nested-2'),
         document.getElementById('nested-3')
       ];
+      
       var order = ['123', '132', '213', '231', '312', '321'];
+      
       var which = 0;
+      
       function next() {
         var test;
         for (var i = 0; i < tests.length; i++) {
@@ -205,6 +212,7 @@
         }
         ++which < order.length || (which = 0);
       }
+      
       var loop = setTimeout(next, 1500);
         
     </script>
