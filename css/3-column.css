@@ -1,9 +1,9 @@
 /* 3-column.css */
 /* Use this CSS to specify 3-column layout, changing only the order-x-y-z class in the content wrapper div: */
 
-    /* main content area */
-    .content_wrapper {
-      width:100%; /* inherit page_wrapper width */
+    /* inherit page_wrapper width */
+    .columns {
+      width: 100%; 
     }
     .intercolumn {
       /* contains columns 1 and 2 */
@@ -20,7 +20,6 @@
     
 
     /* 3-column layouts for content area */
-    .columns {}
     .columns .intercolumn {
       width:710px; /* set width to contain main and more */
     }
@@ -35,18 +34,18 @@
     }
 
 
-    /* order-1-2-3 */
-    .order-1-2-3 {}
-    .order-1-2-3 .intercolumn {
+    /* order-123 */
+    .order-123 {}
+    .order-123 .intercolumn {
       float:left;
     }
-    .order-1-2-3 .main_content {
+    .order-123 .col1 {
       float:left;
     }
-    .order-1-2-3 .more_content {
+    .order-123 .col2 {
       float:right;
     }
-    .order-1-2-3 .related_content {
+    .order-123 .col3 {
       float:right;
     }
 
