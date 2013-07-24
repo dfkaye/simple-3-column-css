@@ -114,12 +114,12 @@
         var test;
         for (var i = 0; i < tests.length; i++) {
           test = tests[i];
-          test.className = test.className.replace(/order-[\w]{3,3}/, 'order-' + order[which]);
+          test.className = test.className.replace(/order-[\w]{3,3}/, 'order-' + order[which++]);
+          which < order.length || (which = 0);
         }
-        ++which < order.length || (which = 0);
       }
       
-      var loop = setTimeout(next, 1500);
+      var loop = setInterval(next, 1500);
         
     </script>
   </body>
