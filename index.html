@@ -17,12 +17,14 @@
     <p>
       Two main obstacles are that 
       1) column widths must be set by page-specific rules, 
-      2) nested 3-column layouts are doubly complicated.
+      2) column 3 width can not be percentage based (may be ems, though)
+      3) (did I say two obstacles?) #3 is that nested 3-column layouts are doubly complicated.
     </p>
     
     <p>
       Prior art - Michael Bowers, "Pro CSS and HTML Design Patterns", APress, 2007.
     </p>
+    
     <p>
       view the repo at 
       <a href='https://github.com/dfkaye/simple-3-column-css'>
@@ -30,8 +32,15 @@
       </a>
     </p>
 
-    <button type='button' id='startButton'>start css loop</button>
-    <button type='button' id='stopButton'>stop loop</button>
+    <div id='orders'>
+      <a href="#123">123</a>
+      <a href="#213">213</a>
+      <a href="#312">312</a>
+      <a href="#321">321</a>
+      <a href="#132">132</a>
+      <a href="#231">231</a>
+    </div>
+
     
     <div class='layers'>
     
@@ -131,38 +140,34 @@
         document.getElementById('nested-3')
       ];
       
-      var order = ['123', '132', '213', '231', '312', '321'];
       
-      var o = 0;
       var t = 0;
-      function next() {
+      
+      function next(rel) {
+        
+        
         var test = tests[t];
-        test.className = test.className.replace(/order-[\w]{3,3}/, 'order-' + order[o++]);
-        o < order.length || (o = 0);
+        test.className = test.className.replace(/order-[\w]{3,3}/, 'order-' + orderrel]);
         t < tests.length || (t = 0);
       }
-      var loop;
-      function startLoop() {
-        loop = setInterval(next, 750);
-        startButton.disabled = true;
-        stopButton.disabled = false;
-      }
-      function stopLoop() {
-        clearInterval(loop);
-        loop = null;
-        stopButton.disabled = true;
-        startButton.disabled = false;        
-      }
-      var startButton = document.getElementById('startButton');
-      var stopButton = document.getElementById('stopButton');
-      if (startButton.addEventListener) {
-        startButton.addEventListener('click', startLoop, false);
-        stopButton.addEventListener('click', stopLoop, false);
-      } else if (startButton.attachEvent) {
-        startButton.attachEvent('onclick', startLoop);
-        stopButton.attachEvent('onclick', stopLoop);
+
+      function showOrder(e) {
+        var target = e.target || e.srcElement;
+        var order = target.getAttribute('href');
+        if (!order) {
+          return;
+        }
+        next(order.replace(/\#/g, ''));
       }
 
-</script>
+      var orders = document.getElementById('orders');
+      
+      if (orders.addEventListener) {
+        orders.addEventListener('click', showOrder, false);
+      } else if (orders.attachEvent) {
+        orders.attachEvent('onclick', showOrder);
+      }
+
+    </script>
   </body>
 </html>
