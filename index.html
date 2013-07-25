@@ -6,21 +6,40 @@
     <link rel='stylesheet' href='./css/test-page.css' />
   </head>
   <body>
-    <h1>simple three-column css</h1>
+    <h1>three-column css test</h1>
+
+    <p>
+      Goal is to create a three-column markup with classes that need no changing 
+      to re-order the columns.  Well, *one* container element's class must change,
+      to allow the cascade/specifity to do the re-ordering.
+    </p>
     
+    <p>
+      Two main obstacles are that 
+      1) column widths must be set by page-specific rules, 
+      2) nested 3-column layouts are doubly complicated.
+    </p>
+    
+    <p>
+      Prior art - Michael Bowers, "Pro CSS and HTML Design Patterns", APress, 2007.
+    </p>
     <p>
       view the repo at 
       <a href='https://github.com/dfkaye/simple-3-column-css'>
         https://github.com/dfkaye/simple-3-column-css
       </a>
     </p>
-    
-    <button type='button' id='startButton'>start</button>
-    <button type='button' id='stopButton'>stop</button>
+
+    <button type='button' id='startButton'>start css loop</button>
+    <button type='button' id='stopButton'>stop loop</button>
     
     <div class='layers'>
     
-      <div id="test-1" class="clearfix columns order-xyz">
+      <h2>simple three-column css</h2>
+      <p>
+        This test works cross-browser back to IE6.  The markup structure is fairly shallow.
+      </p>
+      <div id="simple" class="clearfix columns order-xyz">
         <div class="intercolumn">
           <div class="col-1">
             <h1>1. main section</h1>
@@ -36,7 +55,9 @@
           <p>related paragraph</p>
         </div>
       </div>
-      
+
+      <h2>nested three-column css - in progress</h2>
+
       <div id="nested" class="nested clearfix columns order-xyz">
         <div class="intercolumn">
           <div class="col-1">
@@ -103,7 +124,7 @@
     <script>
     
       var tests = [
-        document.getElementById('test-1'),
+        document.getElementById('simple'),
         document.getElementById('nested'),
         document.getElementById('nested-1'),
         document.getElementById('nested-2'),
