@@ -41,7 +41,6 @@
       <a href="#231">231</a>
     </div>
 
-    
     <div class='layers'>
     
       <h2>simple three-column css</h2>
@@ -153,6 +152,8 @@
 
       function showOrder(e) {
         var target = e.target || e.srcElement;
+        
+        console.log(e)
         var order = target.getAttribute('href');
         if (!order) {
           return;
