@@ -45,8 +45,7 @@
 }
 
 #nested-1 {
-  width: 100%;
-  border: 5px black solid;
+  width: 99%;
 }
 #nested-1 .columns .intercolumn {}
 #nested-1 .col-1 {
@@ -60,8 +59,7 @@
 }
 
 #nested-2 {
-  width: 100%;
-  border: 5px blue solid;
+  width: 99%;
 }
 #nested-2 .intercolumn {}
 #nested-2 .col-1 {
@@ -75,8 +73,7 @@
 }
 
 #nested-3 {
-  width: 100%;
-  border: 5px red solid;
+  width: 99%;
 }
 #nested-3 .intercolumn {}
 #nested-3 .col-1 {
