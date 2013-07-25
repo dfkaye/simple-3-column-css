@@ -30,46 +30,65 @@
 }
 
 
-.nested .intercolumn {
+.nested .nested .intercolumn {
   width: 64%;
 }
-.nested .col-1 {
+.nested .nested .col-1 {
   width: 57%;
+    background: yellow;  
 }
-.nested .col-2 {
+.nested .nested .col-2 {
   width: 40%;
+    background: red;
+
 }
-.nested .col-3 {
+.nested .nested .col-3 {
   width: 35%;
 }
 
+/*
+.nested .nested .intercolumn {
+  width: 65%;
+  background: blue;
+  padding: 5px;
+}
+.nested .nested .col-1 {
+  width: 40%;
+}
+.nested .nested .col-2 {
+  width: 20%;
+}
+.nested .nested .col-3 {
+  width: 25%;
+}
+*/
+
 
 .nested .order-132 .intercolumn {
-  width: auto !important;
-}
-.nested .order-132 .col-1 {
-  width: 57% !important;
-}
-.nested .order-132 .col-2 {
-  width: 20% !important;
-}
-.nested .order-132 .col-3 {
-  width: 10% !important;
-}
-
-
-.nested .order-231 .intercolumn {
   width: auto;
 }
-.nested .order-231 .col-1 {
-  width: 8em;
+.nested .order-132 .col-1 {
+    width: 35%;
 }
-.nested .order-231 .col-2 {
-  width: 5em;
+.nested .order-132 .col-2 {
+    width: 25%;
 }
-.nested .order-231 .col-3 {
-  width: 5em;
+.nested .order-132 .col-3 {
 }
+.nested .order-132 .col-3 {
+    background: blue;
+ }
+
+.order-231 .intercolumn {
+  width: auto;
+}
+.order-231 .col-1 {
+  width: 35%;
+}
+.order-231 .col-2 {
+  width: 25%;
+}
+.order-231 .col-3 {}
 
 
 #nested-1 {
@@ -81,4 +100,5 @@
 #nested-3 {
   width: 99%;
 }
+
 
