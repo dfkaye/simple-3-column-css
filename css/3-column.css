@@ -35,7 +35,7 @@
 /* order-132 */
 .order-132 {}
 .order-132 .intercolumn {
-  /*width: auto;*/ /* unset width for non-contiguous case in IE */
+  width: auto; /* unset width for non-contiguous case in IE */
   
  ;
 }
@@ -72,10 +72,13 @@
 
 /* order-231 */
 .order-231 {}
-.order-231 .intercolumn {
+.order-231 .intercolumn,
   /*width: auto;*/ /* unset width for non-contiguous case in IE */
   width: auto;
   float: none;
+}
+#nested .order-231 .intercolumn {
+float: left !important;
 }
 .order-231 .col-1 {
   /*float: right;*/
@@ -135,4 +138,5 @@
   height: 0;
   clear: both;
 }
+
 
