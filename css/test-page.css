@@ -11,22 +11,22 @@
 }
 .intercolumn {
   /* contains columns 1 and 2 */
-  width: 64%; /* set width to contain col-1 and .col-2 */
+  width: 55em; /* set width to contain col-1 and .col-2 */
 }
 .col-1 {
   background: #fcf;
   border: 1px solid #ccc;
-  width: 65%;
+  width: 30em;
 }
 .col-2 {
   background: #cff9f9;
   border: 1px solid #ccc;
-  width: 33%;
+  width: 20em;
 }
 .col-3 {
   background: #fff0c0;
   border: 1px solid #ccc;
-  width: 34.5%;
+  width: 20em;
 }
 
 /*
