@@ -23,14 +23,10 @@
 
 /* order-123 */
 .order-123 {}
-.order-123 .intercolumn {
-}
-.order-123 .col-1 {
-}
-.order-123 .col-2 {
-}
-.order-123 .col-3 {
-}
+.order-123 .intercolumn {}
+.order-123 .col-1 {}
+.order-123 .col-2 {}
+.order-123 .col-3 {}
 
 
 /* order-132 */
@@ -39,26 +35,21 @@
   width: auto; /* unset width for non-contiguous case in IE */
   float: none;
 }
-.order-132 .col-1 {
-}
+.order-132 .col-1 {}
 .order-132 .col-2 {
   float: right;
 }
-.order-132 .col-3 {
-}
+.order-132 .col-3 {}
 
 
 /* order-213 */
 .order-213 {}
-.order-213 .intercolumn {
-}
+.order-213 .intercolumn {}
 .order-213 .col-1 {
   float: right;
 }
-.order-213 .col-2 {
-}
-.order-213 .col-3 {
-}
+.order-213 .col-2 {}
+.order-213 .col-3 {}
 
 /* order-231 */
 .order-231 {}
@@ -69,10 +60,8 @@
 .order-231 .col-1 {
   float: right;
 }
-.order-231 .col-2 {
-}
-.order-231 .col-3 {
-}
+.order-231 .col-2 {}
+.order-231 .col-3 {}
 
 
 /* order-312 */
@@ -80,12 +69,9 @@
 .order-312 .intercolumn {
   float: right;
 }
-.order-312 .col-1 {
-}
-.order-312 .col-2 {
-}
-.order-312 .col-3 {
-}
+.order-312 .col-1 {}
+.order-312 .col-2 {}
+.order-312 .col-3 {}
 
 
 /* order-321 */
@@ -96,10 +82,8 @@
 .order-321 .col-1 {
   float: right;
 }
-.order-321 .col-2 {
-}
-.order-321 .col-3 {
-}
+.order-321 .col-2 {}
+.order-321 .col-3 {}
     
 /* You'll need this for the floated layout clearing problems: */
 
