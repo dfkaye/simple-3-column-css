@@ -24,8 +24,10 @@
 }
 .order-123 .col-2 {
   /*float: right;*/
+  float: left;
   
-    float: left;
+  _float: right;
+  
 }
 .order-123 .col-3 {
   float: right;
@@ -42,8 +44,9 @@
 }
 .order-132 .col-2 {
   /*float: right;*/
+  float: left;
   
-    float: left;
+  _float: right;
 }
 .order-132 .col-3 {
   float: right;
@@ -73,8 +76,9 @@
 }
 .order-231 .col-1 {
   /*float: right;*/
+  float: left;
   
-    float: left;
+  _float: right;
 }
 .order-231 .col-2 {
   float: left;
