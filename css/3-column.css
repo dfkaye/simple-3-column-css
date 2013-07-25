@@ -36,8 +36,6 @@
 .order-132 {}
 .order-132 .intercolumn {
   width: auto; /* unset width for non-contiguous case in IE */
-  
- ;
 }
 .order-132 .col-1 {
   float: left;
@@ -72,9 +70,8 @@
 /* order-231 */
 .order-231 {}
 .order-231 .intercolumn {
-  /*width: auto;*/ /* unset width for non-contiguous case in IE */
+  width: auto; /* unset width for non-contiguous case in IE */
 }
-    
 .order-231 .col-1 {
   /*float: right;*/
 
@@ -133,6 +130,3 @@
   height: 0;
   clear: both;
 }
-
-
-
