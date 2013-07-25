@@ -143,11 +143,11 @@
       
       var t = 0;
       
-      function next(rel) {
+      function next(order) {
         
         
         var test = tests[t];
-        test.className = test.className.replace(/order-[\w]{3,3}/, 'order-' + orderrel]);
+        test.className = test.className.replace(/order-[\w]{3,3}/, 'order-' + order);
         t < tests.length || (t = 0);
       }
 
