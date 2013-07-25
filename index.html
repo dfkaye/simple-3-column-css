@@ -153,13 +153,18 @@
       function showOrder(e) {
         var target = e.target || e.srcElement;
         
-        console.log(target.nodeName);
+        
         
         
         var order = target.getAttribute('href');
+        
+        console.log(order);
+        
         if (!order) {
           return;
         }
+                console.log(order.replace(/\#/g, ''));
+
         next(order.replace(/\#/g, ''));
       }
 
