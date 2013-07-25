@@ -123,10 +123,14 @@
       var loop;
       function startLoop() {
         loop = setInterval(next, 750);
+        startButton.disabled = true;
+        stopButton.disabled = false;
       }
       function stopLoop() {
         clearInterval(loop);
         loop = null;
+        stopButton.disabled = true;
+        startButton.disabled = false;        
       }
       var startButton = document.getElementById('startButton');
       var stopButton = document.getElementById('stopButton');
