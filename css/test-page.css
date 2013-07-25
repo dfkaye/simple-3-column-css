@@ -36,13 +36,18 @@
 }
 .nested .nested .col-1 {
   width: 57%;
+
+  _width: 30%;
 }
 .nested .nested .col-2 {
   width: 40%;
+  
   _width: 30%;
 }
 .nested .nested .col-3 {
   width: 35%;
+  
+  _width: 30%;  
 }
 
 /* .nested .order-132 and .nested .order-231 require specific widths */
