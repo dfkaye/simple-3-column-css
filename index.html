@@ -96,6 +96,8 @@
       </div>      
     </div>
   
+    <button type='button' id='startButton'>start</button>
+    <button type='button' id='stopButton'>stop</button>
     <script>
     
       var tests = [
@@ -116,9 +118,24 @@
         o < order.length || (o = 0);
         t < tests.length || (t = 0);
       }
-      
-      var loop = setInterval(next, 1500);
-        
-    </script>
+      var loop;
+      function startLoop() {
+        loop = setInterval(next, 250);
+      }
+      function stopLoop() {
+        clearInterval(loop);
+        loop = null;
+      }
+      var startButton = document.getElementById('startButton');
+      var stopButton = document.getElementById('stopButton');
+      if (startButton.addEventListener) {
+        startButton.addEventListenter('click', startLoop, false);
+        stopButton.addEventListenter('click', stopLoop, false);
+      } else if (startButton.attachEvent) {
+        startButton.attachEvent('onclick', startLoop);
+        stopButton.attachEvent('onclick', stopLoop);
+      }
+
+</script>
   </body>
 </html>
