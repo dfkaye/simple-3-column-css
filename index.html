@@ -163,9 +163,9 @@
         if (!order) {
           return;
         }
-                console.log(order.replace(/\#/g, ''));
+                console.log(order.split('#')[1]);
 
-        next(order.replace(/\#/g, ''));
+        next(order.split('#')[1]);
       }
 
       var orders = document.getElementById('orders');
