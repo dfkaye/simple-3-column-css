@@ -39,6 +39,7 @@
 }
 .nested .nested .col-2 {
   width: 40%;
+  _width: 30%;
 }
 .nested .nested .col-3 {
   width: 35%;
