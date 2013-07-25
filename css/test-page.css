@@ -29,20 +29,19 @@
   width: 19em;
 }
 
-/*
-#nested .intercolumn {
+.nested .intercolumn {
   width: 60%;
 }
-#nested .col-1 {
+.nested .col-1 {
   width: 60%;
 }
-#nested .col-2 {
+.nested .col-2 {
   width: 37.5%;
 }
-#nested .col-3 {
+.nested .col-3 {
   width: 29.5%;
 }
-*/
+
 
 #nested-1 {
   width: 99%;
@@ -53,3 +52,4 @@
 #nested-3 {
   width: 99%;
 }
+
