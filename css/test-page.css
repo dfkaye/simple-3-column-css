@@ -32,12 +32,6 @@ width: 25em;
 #nested .intercolumn {
 width: 70%;
 }
-#nested-3 .order-213 .intercolumn {
-  width: 60%;
-  background: aqua;
-}
-#nested .order-132 .intercolumn {
-}
 #nested .col-1 {
 background: #cfcfcf;
 width: 60%;
@@ -53,7 +47,7 @@ width: 30%;
 
 #nested-1 {
 width: 100%;
-  border: 5px black solid;
+border: 5px black solid;
 }
 #nested-1 .columns .intercolumn {
 }
@@ -69,8 +63,7 @@ background: #9f9;
 
 #nested-2 {
 width: 100%;
-    border: 5px blue solid;
-
+border: 5px blue solid;
 }
 #nested-2 .intercolumn {
 }
@@ -85,9 +78,8 @@ background: #cc0;
 }
 
 #nested-3 {
-  width: 100%;
-    border: 5px red solid;
-
+width: 100%;
+border: 5px red solid;
 }
 #nested-3 .intercolumn {
 }
@@ -100,5 +92,3 @@ background: #693;
 #nested-3 .col-3 {
 background: #369;
 }
-
-
