@@ -11,37 +11,37 @@
 }
 .intercolumn {
   /* contains columns 1 and 2 */
-  width: 99%; /* set width to contain col-1 and .col-2 */
+  width: 50em; /* set width to contain col-1 and .col-2 */
 }
 .col-1 {
   background: #fcf;
   border: 1px solid #ccc;
-  width: 50%;
+  width: 30em;
 }
 .col-2 {
   background: #cff9f9;
   border: 1px solid #ccc;
-  width: 24%;
+  width: 19.5em;
 }
 .col-3 {
   background: #fff0c0;
   border: 1px solid #ccc;
-  width: 23.5%;
+  width: 28em;
 }
-/*
+
 #nested .intercolumn {
-  width: 69.5%;
+  width: 60%;
 }
 #nested .col-1 {
-  width: 59.5%;
+  width: 60%;
 }
 #nested .col-2 {
-  width: 38.5%;
+  width: 37.5%;
 }
 #nested .col-3 {
   width: 29.5%;
 }
-*/
+
 
 #nested-1 {
   width: 99%;
@@ -52,4 +52,3 @@
 #nested-3 {
   width: 99%;
 }
-
