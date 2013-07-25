@@ -70,7 +70,9 @@
   width:  auto; /* unset width for non-contiguous case in IE */
 }
 .order-231 .col-1 {
-  float: right;
+  /*float: right;*/
+  
+    float: left;
 }
 .order-231 .col-2 {
   float: left;
