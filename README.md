@@ -3,11 +3,21 @@ simple-3-column-css
 
 A cross-browser flexible 3-column layout CSS plus required HTML.
 
-Working examples
-----------------
+The basic (not nested) layout works fine cross-browser.
 
-[simple 3 column layout](http://rawgithub.com/dfkaye/simple-3-column-css/master/index.html)
+There are complications when nesting 3-col inside another 3-col.
 
+View the [working example](http://rawgithub.com/dfkaye/simple-3-column-css/master/index.html)
+
+
+__TODO: UPDATE EXPLANATION BELOW - WAY OUT OF DATE__
+
+
+Explanation
+-----------
+
+nod to michael bowers
+basis for the markup, class rules, etc.
 
 Given this markup:
 
