@@ -35,7 +35,8 @@
 /* order-132 */
 .order-132 {}
 .order-132 .intercolumn {
-  width: auto; /* unset width for non-contiguous case in IE */
+  /*width: auto;*/ /* unset width for non-contiguous case in IE */
+  float: left;
 }
 .order-132 .col-1 {
   float: left;
