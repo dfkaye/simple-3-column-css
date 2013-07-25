@@ -29,68 +29,48 @@
   width: 19em;
 }
 
+/* specifies widths for nested columns */
 
 .nested .nested .intercolumn {
   width: 64%;
 }
 .nested .nested .col-1 {
   width: 57%;
-    background: yellow;  
 }
 .nested .nested .col-2 {
   width: 40%;
-    background: red;
-
 }
 .nested .nested .col-3 {
   width: 35%;
 }
 
-/*
-.nested .nested .intercolumn {
-  width: 65%;
-  background: blue;
-  padding: 5px;
-}
-.nested .nested .col-1 {
-  width: 40%;
-}
-.nested .nested .col-2 {
-  width: 20%;
-}
-.nested .nested .col-3 {
-  width: 25%;
-}
-*/
-
+/* .nested .order-132 and .nested .order-231 require specific widths */
 
 .nested .order-132 .intercolumn {
   width: auto;
 }
 .nested .order-132 .col-1 {
-    width: 35%;
-}
-.nested .order-132 .col-2 {
-    width: 25%;
-}
-.nested .order-132 .col-3 {
-}
-.nested .order-132 .col-3 {
-    background: blue;
- }
-
-.order-231 .intercolumn {
-  width: auto;
-}
-.order-231 .col-1 {
   width: 35%;
 }
-.order-231 .col-2 {
+.nested .order-132 .col-2 {
   width: 25%;
 }
-.order-231 .col-3 {}
+.nested .order-132 .col-3 {}
 
+/* .nested .order-132 and .nested .order-231 require specific widths */
 
+.nested .order-231 .intercolumn {
+  width: auto;
+}
+.nested .order-231 .col-1 {
+  width: 35%;
+}
+.nested .order-231 .col-2 {
+  width: 25%;
+}
+.nested .order-231 .col-3 {}
+
+/* three nested columns should expand */
 #nested-1 {
   width: 99%;
 }
@@ -100,5 +80,3 @@
 #nested-3 {
   width: 99%;
 }
-
-
