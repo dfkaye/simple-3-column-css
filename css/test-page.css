@@ -1,10 +1,9 @@
- /* overrides for specific page layout */
+/* overrides for specific page layout */
 .layers {
   margin: 1em 0;
 }
 
 /* 3-column layouts for content area */
-
 .columns {
   border: 1px solid #666;
   margin: 1em 0;
@@ -12,22 +11,22 @@
 }
 .intercolumn {
   /* contains columns 1 and 2 */
-  width: 39.75em; /* set width to contain col-1 and .col-2 */
+  width: 39.5em; /* set width to contain col-1 and .col-2 */
 }
 .col-1 {
-  background: #ffccff;
-  border: 1px solid #999;
-  width: 24.75em;
+  background: #fcf;
+  border: 1px solid #ccc;
+  width: 24.5em;
 }
 .col-2 {
   background: #cff9f9;
-  border: 1px solid #999;  
-  width: 14.75em;
+  border: 1px solid #ccc;
+  width: 14.5em;
 }
 .col-3 {
   background: #fff0c0;
-  border: 1px solid #999;
-  width: 24.75em;
+  border: 1px solid #ccc;
+  width: 24.5em;
 }
 
 #nested .intercolumn {
