@@ -37,7 +37,7 @@
 .order-132 .intercolumn {
   /*width: auto;*/ /* unset width for non-contiguous case in IE */
   
-    float: right;
+ ;
 }
 .order-132 .col-1 {
   float: left;
@@ -48,7 +48,9 @@
   float: right;
 }
 .order-132 .col-3 {
-  float: right;
+  /*float: right;*/
+  
+  float:right;
 }
 
 
@@ -72,19 +74,19 @@
 .order-231 {}
 .order-231 .intercolumn {
   /*width: auto;*/ /* unset width for non-contiguous case in IE */
-
-  float: right;
+  width: auto;
+  float: none;
 }
 .order-231 .col-1 {
   /*float: right;*/
-  
+
   float: right;
 }
 .order-231 .col-2 {
   float: left;
 }
 .order-231 .col-3 {
-  float: right;
+  float: left;
 }
 
 
@@ -97,7 +99,9 @@
   float: left;
 }
 .order-312 .col-2 {
-  float: left;
+  /*float: left;*/
+  
+    float: right;
 }
 .order-312 .col-3 {
   float: left;
@@ -131,3 +135,4 @@
   height: 0;
   clear: both;
 }
+
