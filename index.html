@@ -8,7 +8,8 @@
   <body>
     <h1>simple three-column css</h1>
     
-    <p>view the repo at 
+    <p>
+      view the repo at 
       <a href='https://github.com/dfkaye/simple-3-column-css'>
         https://github.com/dfkaye/simple-3-column-css
       </a>
@@ -129,8 +130,8 @@
       var startButton = document.getElementById('startButton');
       var stopButton = document.getElementById('stopButton');
       if (startButton.addEventListener) {
-        startButton.addEventListenter('click', startLoop, false);
-        stopButton.addEventListenter('click', stopLoop, false);
+        startButton.addEventListener('click', startLoop, false);
+        stopButton.addEventListener('click', stopLoop, false);
       } else if (startButton.attachEvent) {
         startButton.attachEvent('onclick', startLoop);
         stopButton.attachEvent('onclick', stopLoop);
