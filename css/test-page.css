@@ -1,87 +1,54 @@
  /* overrides for specific page layout */
 .layers {
-  margin: 2em 1.5em 5em;
+  margin: 1em 0;
 }
 
 /* 3-column layouts for content area */
 
 .columns {
   border: 1px solid #666;
-  margin: 2em 0;
+  margin: 1em 0;
   width: 65em; /* set width to contain intercolumn and .col-3 */
 }
 .intercolumn {
   /* contains columns 1 and 2 */
-  width: 40em; /* set width to contain col-1 and .col-2 */
+  width: 39.75em; /* set width to contain col-1 and .col-2 */
 }
 .col-1 {
   background: #ffccff;
-  width: 25em;
+  border: 1px solid #999;
+  width: 24.75em;
 }
 .col-2 {
   background: #cff9f9;
-  width: 15em;
+  border: 1px solid #999;  
+  width: 14.75em;
 }
 .col-3 {
   background: #fff0c0;
-  width: 25em;
+  border: 1px solid #999;
+  width: 24.75em;
 }
 
-#nested {}
 #nested .intercolumn {
-  width: 70%;
+  width: 69%;
 }
 #nested .col-1 {
-  background: #cfcfcf;
-  width: 60%;
+  width: 59%;
 }
 #nested .col-2 {
-  background: #ffcc66;
-  width: 40%;
+  width: 39%;
 }
 #nested .col-3 {
-  background: #cc9933;
-  width: 30%;
+  width: 29%;
 }
 
 #nested-1 {
   width: 99%;
 }
-#nested-1 .columns .intercolumn {}
-#nested-1 .col-1 {
-  background: #f9f;
-}
-#nested-1 .col-2 {
-  background: #c0c0;
-}
-#nested-1 .col-3 {
-  background: #9f9;
-}
-
 #nested-2 {
   width: 99%;
 }
-#nested-2 .intercolumn {}
-#nested-2 .col-1 {
-  background: #ff9;
-}
-#nested-2 .col-2 {
-  background: #99f;
-}
-#nested-2 .col-3 {
-  background: #cc0;
-}
-
 #nested-3 {
   width: 99%;
-}
-#nested-3 .intercolumn {}
-#nested-3 .col-1 {
-  background: #963;
-}
-#nested-3 .col-2 {
-  background: #693;  
-}
-#nested-3 .col-3 {
-  background: #369;
 }
