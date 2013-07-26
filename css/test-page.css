@@ -58,6 +58,7 @@ body {
 }
 .nested .nested .col-3 {
   width: 35%;
+  _width: 33%;  
 }
 
 /* .nested .order-132 specific widths */
