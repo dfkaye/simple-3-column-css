@@ -1,4 +1,13 @@
 /* overrides for specific page layout */
+body {
+  font-family: verdana, arial, sans-serif;
+  font-size: 0.75em;
+  margin: 2%;
+  border: 1px solid #999;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+
 .demo {
   margin: 1em 0;
 }
