@@ -57,6 +57,18 @@
 }
 .nested .order-132 .col-3 {}
 
+.order-132 .nested .intercolumn {
+  width: auto;
+}
+.order-132 .nested .col-1 {
+  width: 35%;
+}
+.order-132 .nested .col-2 {
+  width: 25%;
+}
+.order-132 .nested .col-3 {}
+
+
 /* .nested .order-231 specific widths */
 
 .nested .order-231 .intercolumn {
