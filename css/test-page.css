@@ -71,7 +71,10 @@ body {
 .nested .order-132 .col-2 {
   width: 25% !important;
 }
-.nested .order-132 .col-3 {}
+.nested .order-132 .col-3 {
+  
+    _width: 33%;
+}
 
 .order-132 .nested .intercolumn {
   float: none; /* not dry - force unsetting width for non-contiguous cases */
@@ -83,7 +86,10 @@ body {
 .order-132 .nested .col-2 {
   width: 25% !important;
 }
-.order-132 .nested .col-3 {}
+.order-132 .nested .col-3 {
+  
+    _width: 33%;
+}
 
 
 /* .nested .order-231 specific widths */
@@ -98,7 +104,10 @@ body {
 .nested .order-231 .col-2 {
   width: 25% !important;
 }
-.nested .order-231 .col-3 {}
+.nested .order-231 .col-3 {
+  
+    _width: 33%;
+}
 
 .order-231 .nested .intercolumn {
   float: none; /* not dry - force unsetting width for non-contiguous cases */
@@ -110,7 +119,10 @@ body {
 .order-231 .nested .col-2 {
   width: 25% !important;
 }
-.order-231 .nested .col-3 {}
+.order-231 .nested .col-3 {
+  
+    _width: 33%;
+}
 
 /* expand widths for nested test columns */
 
