@@ -183,6 +183,9 @@
           if (!order) {
             return;
           }
+          
+          (e.preventDefault && e.preventDefault()) || (e.returnValue = false);
+          
           next(order.split('#')[1]);
         }
   
