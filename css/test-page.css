@@ -54,15 +54,16 @@ body {
   width: 40%;
 }
 .nested .nested .col-3 {
-  width: 35%; 
+  width: 35%;
+  
+  _width: 33%;
 }
 
 /* .nested .order-132 specific widths */
 
 .nested .order-132 .intercolumn {
+  float: none; /* not dry - force unsetting width for non-contiguous cases */
   width: auto;
-  
-  float: none;
 }
 .nested .order-132 .col-1 {
   width: 35%;
@@ -73,9 +74,8 @@ body {
 .nested .order-132 .col-3 {}
 
 .order-132 .nested .intercolumn {
+  float: none; /* not dry - force unsetting width for non-contiguous cases */
   width: auto;
-  
-  float: none;
 }
 .order-132 .nested .col-1 {
   width: 35%;
@@ -89,9 +89,8 @@ body {
 /* .nested .order-231 specific widths */
 
 .nested .order-231 .intercolumn {
+  float: none; /* not dry - force unsetting width for non-contiguous cases */
   width: auto;
-  
-  float: none;
 }
 .nested .order-231 .col-1 {
   width: 35%;
@@ -102,9 +101,8 @@ body {
 .nested .order-231 .col-3 {}
 
 .order-231 .nested .intercolumn {
+  float: none; /* not dry - force unsetting width for non-contiguous cases */
   width: auto;
-  
-  float: none;
 }
 .order-231 .nested .col-1 {
   width: 35%;
