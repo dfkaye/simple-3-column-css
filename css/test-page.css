@@ -8,6 +8,10 @@ body {
   padding: 10px 15px;
 }
 
+.demo h1 {
+  font-size: 1em
+}
+
 .demo {
   margin: 1em 0;
 }
@@ -16,16 +20,16 @@ body {
 .columns {
   border: 1px solid #666;
   margin: 1em 0;
-  width: 65em; /* set width to contain intercolumn and .col-3 */
+  width: 85em; /* set width to contain intercolumn and .col-3 */
 }
 .intercolumn {
   /* contains columns 1 and 2 */
-  width: 45em; /* set width to contain col-1 and .col-2 */
+  width: 65em; /* set width to contain col-1 and .col-2 */
 }
 .col-1 {
   background: #fcf;
   border: 1px solid #ccc;
-  width: 25em;
+  width: 45em;
 }
 .col-2 {
   background: #cff9f9;
@@ -121,3 +125,4 @@ body {
 #nested-3 {
   width: 99%;
 }
+
