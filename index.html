@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>simple three-column css</title>
+    <title>simple three-column css layout</title>
     <link rel='stylesheet' href='./css/3-column.css' />
     <link rel='stylesheet' href='./css/test-page.css' />
   </head>
   <body>
-    <h1>three-column css test</h1>
+    <h1>three-column css layout</h1>
 
     <p>
       Goal is to create a three-column markup with classes that need no changing 
@@ -15,25 +15,38 @@
     </p>
     
     <p>
-      Two main obstacles are that 
-      1) column widths must be set by page-specific rules, 
-      2) column 3 width can not be percentage based (may be ems, though)
-      3) (did I say two obstacles?) #3 is that nested 3-column layouts are doubly complicated.
-      4) (another one?) #4 MS IE 6 *almost* lays out the nested structures - IE7 and up seem OK now.
+      Two main obstacles are that
+    </p>
+    <ul>
+      <li>
+         column widths must be set by page-specific rules
+      </li>
+      <li>
+         column-3's width can not be percentage based (may be ems, though)
+      </li>      
+      <li>
+         (did I say two obstacles?) #3 is that nested 3-column layouts are doubly complicated - 
+         they require doubly unsetting width rules (.nested .nested .col-# {}) - which is not best
+         practice (OOCSS) for me but you can see what it might take to get this working on your own
+         project without too much pain.
+      </li>
+    </ul>
+    
+    <p>
+      Prior art - see especially 
+      <a href='http://www.amazon.com/Pro-CSS-HTML-Design-Patterns/dp/1590598040/'>
+        Michael Bowers, "Pro CSS and HTML Design Patterns", APress, 2007
+      </a>.
     </p>
     
     <p>
-      Prior art - Michael Bowers, "Pro CSS and HTML Design Patterns", APress, 2007.
-    </p>
-    
-    <p>
-      view the repo at 
+      View the repo at 
       <a href='https://github.com/dfkaye/simple-3-column-css'>
         https://github.com/dfkaye/simple-3-column-css
       </a>
     </p>
 
-    <h3>view the basic layouts:</h3>
+    <h3>View the basic layouts:</h3>
     <div id='orders'>
       <a href="#123">123</a>
       <a href="#213">213</a>
@@ -43,11 +56,11 @@
       <a href="#231">231</a>
     </div>
     
-    <h3>loop through the layouts</h3>
+    <h3>Loop through the layouts:</h3>
     <button type='button' id='startButton'>start loop</button>
     <button type='button' id='stopButton'>stop loop</button>    
 
-    <div class='layers'>
+    <div class='demo'>
     
       <h2>simple three-column css</h2>
       <p>
@@ -71,7 +84,9 @@
       </div>
 
       <h2>nested three-column css - in progress</h2>
-
+      <p>
+        This test works cross-browser back to IE7.  The markup structure is fairly shallow.
+      </p>
       <div id="nested" class="nested clearfix columns order-xyz">
         <div class="intercolumn">
           <div class="col-1">
