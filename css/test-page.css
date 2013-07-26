@@ -55,7 +55,7 @@
   width: 35%;
 }
 .nested .order-132 .col-2 {
-  width: 25%;
+  width: 25% !important;
 }
 .nested .order-132 .col-3 {}
 
@@ -84,7 +84,7 @@
   width: 35%;
 }
 .nested .order-231 .col-2 {
-  width: 25%;
+  width: 25% !important;
 }
 .nested .order-231 .col-3 {}
 
