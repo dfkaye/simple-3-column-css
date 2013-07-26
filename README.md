@@ -21,7 +21,7 @@ basis for the markup, class rules, etc.
 
 Given this markup:
 
-    <div id="" class="clearfix columns order-XYZ">
+    <div id="simple" class="clearfix columns order-xyz">
       <div class="intercolumn">
         <div class="col-1">
           <h1>1. main section</h1>
@@ -39,135 +39,54 @@ Given this markup:
     </div>
 
 
-Use this CSS to specify 3-column layout, changing only the order-x-y-z class in the content wrapper div:
+Use this CSS to specify 3-column layout, changing only the order-{XYZ} class in the "columns" div.
+Then you can specify the actual widths of each column and intercolumn (which contains cols 1 and 2)
+in a separate layout-specific or page-specific css file:
 
-    /* inherit page_wrapper width */
     .columns {
-      width: 100%; 
+      /* set width to contain intercolumn and .col-3 */
     }
     .intercolumn {
       /* contains columns 1 and 2 */
+      /* set width to contain col-1 and .col-2 */
+      float: left;
     }
     .col-1 {
-      background: #ffccff;
+      float: left;
     }
     .col-2 {
-      background: #cff9f9;
+      float: left;
     }
     .col-3 {
-      background: #fff0c0;
+      float: left;
     }
-    
-
-    /* 3-column layouts for content area */
-    .columns .intercolumn {
-      width:710px; /* set width to contain main and more */
-    }
-    .columns .col-1 {
-      width:500px;
-    }
-    .columns .col-2 {
-      width:210px;
-    }
-    .columns .col-3 {
-      width:230px;
-    }
-
-
-    /* order-123 */
-    .order-123 {}
-    .order-123 .intercolumn {
-      float:left;
-    }
-    .order-123 .col-1 {
-      float:left;
-    }
-    .order-123 .col-2 {
-      float:right;
-    }
-    .order-123 .col-3 {
-      float:right;
-    }
-
-
-    /* order-132 */
-    .order-132 {}
     .order-132 .intercolumn {
-      width:auto; /* unset width for non-contiguous case in IE */
-    }
-    .order-132 .col-1 {
-      float:left;
+      width: auto;  /* unset width for non-contiguous case in IE */
+      float: none;
     }
     .order-132 .col-2 {
-      float:right;
-    }
-    .order-132 .col-3 {
-      float:right;
-    }
-
-
-    /* order-213 */
-    .order-213 {}
-    .order-213 .intercolumn {
-      float:left;
+      float: right;
     }
     .order-213 .col-1 {
-      float:right;
+      float: right;
     }
-    .order-213 .col-2 {
-      float:left;
-    }
-    .order-213 .col-3 {
-      float:right;
-    }
-
-
-    /* order-231 */
-    .order-231 {}
     .order-231 .intercolumn {
-      width:auto; /* unset width for non-contiguous case in IE */
+      width: auto; /* unset width for non-contiguous case in IE */
+      float: none;
     }
     .order-231 .col-1 {
-      float:right;
+      float: right;
     }
-    .order-231 .col-2 {
-      float:left;
-    }
-    .order-231 .col-3 {
-      float:right;
-    }
-
-
-    /* order-312 */
-    .order-312 {}
     .order-312 .intercolumn {
-      float:right;
+      float: right;
     }
-    .order-312 .col-1 {
-      float:left;
-    }
-    .order-312 .col-2 {
-      float:left;
-    }
-    .order-312 .col-3 {
-      float:left;
-    }
-
-
-    /* order-321 */
-    .order-321 {}
     .order-321 .intercolumn {
-      float:right;
+      float: right;
     }
     .order-321 .col-1 {
-      float:right;
+      float: right;
     }
-    .order-321 .col-2 {
-      float:left;
-    }
-    .order-321 .col-3 {
-      float:left;
-    }
+
       
 You'll need this for the floated layout clearing problems:
 
