@@ -52,13 +52,9 @@ body {
 }
 .nested .nested .col-2 {
   width: 40%;
-  
-  /* FIX the old double-margin on float bug in IE6 */
-  _width: 20%;
 }
 .nested .nested .col-3 {
   width: 35%;
-  _width: 33%;  
 }
 
 /* .nested .order-132 specific widths */
@@ -112,10 +108,7 @@ body {
 .order-231 .nested .col-2 {
   width: 25% !important;
 }
-.order-231 .nested .col-3 {
-  
-    _width: 33%;
-}
+.order-231 .nested .col-3 {}
 
 /* expand widths for nested test columns */
 
