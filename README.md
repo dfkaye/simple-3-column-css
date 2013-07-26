@@ -19,7 +19,8 @@ View the [working example](http://rawgithub.com/dfkaye/simple-3-column-css/maste
 key factors
 -----------
 
-+ Solution requires float-based layouts (plus a clearfix).
++ Solution requires float-based layouts (plus a clearfix) - makes IE6 harder because of the old "doubled margins
+    in floated elements" bug we used to love.
 + Columns 1 and 2 need to be wrapped by an "intercolumn" element, with column 3 a sibling after that 
     (insight from Michael Bowers, 
         [Pro CSS and HTML Design Patterns](http://www.amazon.com/Pro-CSS-HTML-Design-Patterns/dp/1590598040/).
