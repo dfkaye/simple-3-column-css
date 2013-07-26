@@ -17,7 +17,7 @@
     <p>
       Two main obstacles are that
     </p>
-    <ul>
+    <ol>
       <li>
          column widths must be set by page-specific rules
       </li>
@@ -30,7 +30,7 @@
          practice (OOCSS) for me but you can see what it might take to get this working on your own
          project without too much pain.
       </li>
-    </ul>
+    </ol>
     
     <p>
       Prior art - see especially 
@@ -63,9 +63,9 @@
     <div class='demo'>
     
       <h2>simple three-column css</h2>
-      <p>
+      <h3>
         This test works cross-browser back to IE6.  The markup structure is fairly shallow.
-      </p>
+      </h3>
       <div id="simple" class="clearfix columns order-xyz">
         <div class="intercolumn">
           <div class="col-1">
@@ -84,9 +84,11 @@
       </div>
 
       <h2>nested three-column css - in progress</h2>
-      <p>
-        This test works cross-browser back to IE7.  The markup structure is fairly shallow.
-      </p>
+      <h3>
+        This test works cross-browser back to IE7 (IE6 requires underscore hacks - no, thanks).  
+        The markup structure from the simple example is repeated in the nested columns, making 
+        it a little harder on the eyes.
+      </h3>
       <div id="nested" class="nested clearfix columns order-xyz">
         <div class="intercolumn">
           <div class="col-1">
@@ -151,76 +153,87 @@
     </div>
   
     <script>
-    
-      var tests = [
-        document.getElementById('simple'),
-        document.getElementById('nested'),
-        document.getElementById('nested-1'),
-        document.getElementById('nested-2'),
-        document.getElementById('nested-3')
-      ];
+      /* unsexy vanilla-js */
       
-      var order = ['123', '132', '213', '231', '312', '321'];
-      
-      var o = 0;
-      var t = 0;
-      function loop() {
-        var test = tests[t++];
-        test.className = test.className.replace(/order-[\w]{3,3}/, 'order-' + order[o++]);
-        o < order.length || (o = 0);
-        t < tests.length || (t = 0);
-      }
-      var interval;
-      function startLoop() {
-        interval = setInterval(loop, 750);
-        startButton.disabled = true;
-        stopButton.disabled = false;
-      }
-      function stopLoop() {
-        clearInterval(interval);
-        interval = null;
-        stopButton.disabled = true;
-        startButton.disabled = false;        
-      }
-      var startButton = document.getElementById('startButton');
-      var stopButton = document.getElementById('stopButton');
-      if (startButton.addEventListener) {
-        startButton.addEventListener('click', startLoop, false);
-        stopButton.addEventListener('click', stopLoop, false);
-      } else if (startButton.attachEvent) {
-        startButton.attachEvent('onclick', startLoop);
-        stopButton.attachEvent('onclick', stopLoop);
-      }
-      //var t = 0;
-      
-      function next(order) {
-        //var test = tests[t];
-        //test.className = test.className.replace(/order-[\w]{3,3}/, 'order-' + order);
-        //t < tests.length || (t = 0);
+      ;(function initdemo() {
         
-        for ( var i = 0; i < tests.length; i++) {
-          var test = tests[i];
-          test.className = test.className.replace(/order-[\w]{3,3}/, 'order-' + order);
+        // layout boxes
+        
+        var tests = [
+          document.getElementById('simple'),
+          document.getElementById('nested'),
+          document.getElementById('nested-1'),
+          document.getElementById('nested-2'),
+          document.getElementById('nested-3')
+        ];
+        
+        // jump links
+        
+        function next(order) {        
+          for ( var i = 0; i < tests.length; i++) {
+            var test = tests[i];
+            test.className = test.className.replace(/order-[\w]{3,3}/, 'order-' + order);
+          }
         }
-      }
-
-      function showOrder(e) {
-        var target = e.target || e.srcElement;
-        var order = target.getAttribute('href');      
-        if (!order) {
-          return;
+  
+        function showOrder(e) {
+          var target = e.target || e.srcElement;
+          var order = target.getAttribute('href');      
+          if (!order) {
+            return;
+          }
+          next(order.split('#')[1]);
         }
-        next(order.split('#')[1]);
-      }
-
-      var orders = document.getElementById('orders');
-      
-      if (orders.addEventListener) {
-        orders.addEventListener('click', showOrder, false);
-      } else if (orders.attachEvent) {
-        orders.attachEvent('onclick', showOrder);
-      }
-
+  
+        var orders = document.getElementById('orders');
+        
+        if (orders.addEventListener) {
+          orders.addEventListener('click', showOrder, false);
+        } else if (orders.attachEvent) {
+          orders.attachEvent('onclick', showOrder);
+        }
+        
+        // loop buttons
+        
+        var order = ['123', '132', '213', '231', '312', '321'];
+        
+        var o = 0;
+        var t = 0;
+        
+        function loop() {
+          var test = tests[t++];
+          test.className = test.className.replace(/order-[\w]{3,3}/, 'order-' + order[o++]);
+          o < order.length || (o = 0);
+          t < tests.length || (t = 0);
+        }
+        
+        var interval;
+        
+        function startLoop() {
+          interval = setInterval(loop, 750);
+          startButton.disabled = true;
+          stopButton.disabled = false;
+        }
+        
+        function stopLoop() {
+          clearInterval(interval);
+          interval = null;
+          stopButton.disabled = true;
+          startButton.disabled = false;        
+        }
+        
+        var startButton = document.getElementById('startButton');
+        var stopButton = document.getElementById('stopButton');
+        
+        if (startButton.addEventListener) {
+          startButton.addEventListener('click', startLoop, false);
+          stopButton.addEventListener('click', stopLoop, false);
+        } else if (startButton.attachEvent) {
+          startButton.attachEvent('onclick', startLoop);
+          stopButton.attachEvent('onclick', stopLoop);
+        }
+        
+      }());
     </script>
   </body>
 </html>
