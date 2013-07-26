@@ -3,23 +3,32 @@ simple-3-column-css
 
 A cross-browser flexible 3-column layout CSS plus required HTML.
 
-The basic (not nested) layout works fine cross-browser.
+goal
+----
 
-There are complications when nesting 3-col inside another 3-col.
+Given one set of markup, one set of CSS, change one CSS class name in the markup to re-order the columns.
+
+example
+-------
 
 View the [working example](http://rawgithub.com/dfkaye/simple-3-column-css/master/index.html)
 
++ The basic layout works fine cross-browser, back to IE6.
++ Nesting 3-col inside another 3-col requires longer (more specific) CSS selectors to override widths, etc.
 
-__TODO: UPDATE EXPLANATION BELOW - WAY OUT OF DATE__
-
-
-Explanation
+key factors
 -----------
 
-nod to michael bowers
-basis for the markup, class rules, etc.
++ Solution requires float-based layouts (plus a clearfix).
++ Columns 1 and 2 need to be wrapped by an "intercolumn" element, with column 3 a sibling after that 
+    (insight from Michael Bowers, 
+        [Pro CSS and HTML Design Patterns](http://www.amazon.com/Pro-CSS-HTML-Design-Patterns/dp/1590598040/).
++ Change only the order-{XYZ} class in the "columns" div.
++ Specify actual widths of each column and intercolumn (which contains cols 1 and 2) in a separate 
+    layout-specific or page-specific css file.
 
-Given this markup:
+given this markup:
+-----------------
 
     <div id="simple" class="clearfix columns order-xyz">
       <div class="intercolumn">
@@ -39,9 +48,8 @@ Given this markup:
     </div>
 
 
-Use this CSS to specify 3-column layout, changing only the order-{XYZ} class in the "columns" div.
-Then you can specify the actual widths of each column and intercolumn (which contains cols 1 and 2)
-in a separate layout-specific or page-specific css file:
+use this CSS to specify 3-column layout:
+---------------------------------------
 
     .columns {
       /* set width to contain intercolumn and .col-3 */
