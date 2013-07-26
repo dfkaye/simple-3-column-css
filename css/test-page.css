@@ -48,6 +48,8 @@
 
 .nested .order-132 .intercolumn {
   width: auto;
+  
+  float: none;
 }
 .nested .order-132 .col-1 {
   width: 35%;
@@ -88,6 +90,8 @@
 
 .order-231 .nested .intercolumn {
   width: auto;
+  
+  float: none;
 }
 .order-231 .nested .col-1 {
   width: 35%;
