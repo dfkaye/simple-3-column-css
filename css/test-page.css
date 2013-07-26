@@ -82,6 +82,17 @@
 }
 .nested .order-231 .col-3 {}
 
+.order-231 .nested .intercolumn {
+  width: auto;
+}
+.order-231 .nested .col-1 {
+  width: 35%;
+}
+.order-231 .nested.col-2 {
+  width: 25%;
+}
+.order-231 .nested .col-3 {}
+
 /* expand widths for nested test columns */
 
 #nested-1 {
