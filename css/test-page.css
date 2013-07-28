@@ -42,83 +42,71 @@ body {
   width: 19em;
 }
 
+/* expand widths for nested test columns */
+
+.columns .columns {
+  width: 99%;
+}
+
 /* .nested .nested specific widths */
 
-.nested .nested .intercolumn {
+.columns .columns .intercolumn {
   width: 64%;
 }
-.nested .nested .col-1 {
+.columns .columns .col-1 {
   width: 57%;
 }
-.nested .nested .col-2 {
+.columns .columns .col-2 {
   width: 40%;
 }
-.nested .nested .col-3 {
+.columns .columns .col-3 {
   width: 35%;
 }
 
 /* .nested .order-132 specific widths */
 
-.nested .order-132 .intercolumn {
+.columns .order-132 .intercolumn {
   float: none; /* not dry - force unsetting width for non-contiguous cases */
   width: auto;
 }
-.nested .order-132 .col-1 {
+.columns .order-132 .col-1 {
   width: 35%;
 }
-.nested .order-132 .col-2 {
+.columns .order-132 .col-2 {
   width: 25% !important;
 }
-.nested .order-132 .col-3 {}
 
-.order-132 .nested .intercolumn {
+.order-132 .columns .intercolumn {
   float: none; /* not dry - force unsetting width for non-contiguous cases */
   width: auto;
 }
-.order-132 .nested .col-1 {
+.order-132 .columns .col-1 {
   width: 35%;
 }
-.order-132 .nested .col-2 {
+.order-132 .columns .col-2 {
   width: 25% !important;
 }
-.order-132 .nested .col-3 {}
-
 
 /* .nested .order-231 specific widths */
 
-.nested .order-231 .intercolumn {
+.columns .order-231 .intercolumn {
   float: none; /* not dry - force unsetting width for non-contiguous cases */
   width: auto;
 }
-.nested .order-231 .col-1 {
+.columns .order-231 .col-1 {
   width: 35%;
 }
-.nested .order-231 .col-2 {
+.columns .order-231 .col-2 {
   width: 25% !important;
 }
-.nested .order-231 .col-3 {}
 
-.order-231 .nested .intercolumn {
+.order-231 .columns .intercolumn {
   float: none; /* not dry - force unsetting width for non-contiguous cases */
   width: auto;
 }
-.order-231 .nested .col-1 {
+.order-231 .columns .col-1 {
   width: 35%;
 }
-.order-231 .nested .col-2 {
+.order-231 .columns .col-2 {
   width: 25% !important;
 }
-.order-231 .nested .col-3 {}
-
-/* expand widths for nested test columns */
-
-#nested-1 {
-  width: 99%;
-}
-#nested-2 {
-  width: 99%;
-}
-#nested-3 {
-  width: 99%;
-}
-
