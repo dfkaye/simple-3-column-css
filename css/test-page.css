@@ -67,7 +67,6 @@ body {
 /* .nested .order-132 specific widths */
 
 .columns .order-132 .intercolumn {
-  float: none;
   width: auto;
 }
 .columns .order-132 .col-1 {
@@ -76,23 +75,11 @@ body {
 .columns .order-132 .col-2 {
   width: 25%;
 }
-/*
-.order-132 .columns .intercolumn {
-  float: none;
-  width: auto;
-}
-.order-132 .columns .col-1 {
-  width: 35%;
-}
-.order-132 .columns .col-2 {
-  width: 25%;
-}
-*/
+
 
 /* .nested .order-231 specific widths */
 
 .columns .order-231 .intercolumn {
-  float: none; 
   width: auto;
 }
 .columns .order-231 .col-1 {
@@ -101,18 +88,15 @@ body {
 .columns .order-231 .col-2 {
   width: 25%;
 }
-/*
-.order-231 .columns .intercolumn {
+
+
+
+.columns .order-132 .intercolumn {
   float: none;
-  width: auto;
 }
-.order-231 .columns .col-1 {
-  width: 35%;
+.columns .order-231 .intercolumn {
+float: none;
 }
-.order-231 .columns .col-2 {
-  width: 25%;
-}
-*/
 
 .order-213 .order-123 .col-1 {
   float: left;
@@ -120,8 +104,11 @@ body {
 .order-213 .order-312 .col-1 {
   float: left;
 }
+.order-321 .order-312 .col-1 {
+  float: left;
+}
 
-      
+
 .order-132 .order-231 .col-2 {
   float: left;
 }
@@ -154,5 +141,3 @@ float: right;
 .columns .order-321 .intercolumn {
   float: right;
 }
-
-
