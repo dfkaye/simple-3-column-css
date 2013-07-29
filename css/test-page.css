@@ -127,6 +127,9 @@ body {
 .order-321 .order-123 .col-1 {
   float: left;
 }
+.order-321 .order-312 .col-1 {
+  float: left;
+}
 
 .columns .order-231  .col-1 {
   float: right;
@@ -153,6 +156,7 @@ body {
 .columns .order-132 .col-2 {
   float: right;
 }
+
 .columns .order-321 .col-2 {
   float: right;
 }
