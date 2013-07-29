@@ -52,7 +52,6 @@ body {
 
 .columns .columns .intercolumn {
   width: 64%;
-  float: left;
 }
 .columns .columns .col-1 {
   width: 57%;
@@ -95,7 +94,7 @@ body {
   float: none;
 }
 .columns .order-231 .intercolumn {
-float: none;
+  float: none;
 }
 
 .order-213 .order-123 .col-1 {
@@ -104,10 +103,12 @@ float: none;
 .order-213 .order-312 .col-1 {
   float: left;
 }
+.order-321 .order-123 .col-1 {
+  float: left;
+}
 .order-321 .order-312 .col-1 {
   float: left;
 }
-
 
 .order-132 .order-231 .col-2 {
   float: left;
@@ -127,17 +128,20 @@ float: none;
   float: right;
 }
 .order-231 .order-231 .col-1 {
-float: right;
+  float: right;
 }
 .order-231 .order-132 .col-2 {
   float: right;
 }
 
-
+.columns .columns .intercolumn {
+   float: left; 
+}
 .columns .order-312 .intercolumn {
-  float:right;
+  float: right;
 }
 
 .columns .order-321 .intercolumn {
   float: right;
 }
+
