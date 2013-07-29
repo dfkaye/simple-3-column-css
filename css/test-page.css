@@ -64,49 +64,64 @@ body {
 }
 
 /* .nested .order-132 specific widths */
-
+/*
 .columns .order-132 .intercolumn {
-  float: none; /* not dry - force unsetting width for non-contiguous cases */
+  float: none;
   width: auto;
 }
 .columns .order-132 .col-1 {
   width: 35%;
 }
 .columns .order-132 .col-2 {
-  width: 25% !important;
+  width: 25%;
 }
 
 .order-132 .columns .intercolumn {
-  float: none; /* not dry - force unsetting width for non-contiguous cases */
+  float: none;
   width: auto;
 }
 .order-132 .columns .col-1 {
   width: 35%;
 }
 .order-132 .columns .col-2 {
-  width: 25% !important;
+  width: 25%;
 }
+*/
 
 /* .nested .order-231 specific widths */
-
+/*
 .columns .order-231 .intercolumn {
-  float: none; /* not dry - force unsetting width for non-contiguous cases */
+  float: none; 
   width: auto;
 }
 .columns .order-231 .col-1 {
   width: 35%;
 }
 .columns .order-231 .col-2 {
-  width: 25% !important;
+  width: 25%;
 }
 
 .order-231 .columns .intercolumn {
-  float: none; /* not dry - force unsetting width for non-contiguous cases */
+  float: none;
   width: auto;
 }
 .order-231 .columns .col-1 {
   width: 35%;
 }
 .order-231 .columns .col-2 {
-  width: 25% !important;
+  width: 25%;
 }
+*/
+
+.order-132 .order-231 .intercolumn {
+  width: auto;
+  float: none;
+}
+.order-132 .order-231 .col-1 {
+  width: 35%;
+}
+.order-132 .order-231 .col-2 {
+  width: 25%;
+  float: left;
+}
+   
