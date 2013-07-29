@@ -89,6 +89,9 @@ body {
 }
 
 
+.columns .columns .intercolumn {
+   float: left; 
+}
 
 .columns .order-132 .intercolumn {
   float: none;
@@ -103,6 +106,7 @@ body {
 .order-213 .order-312 .col-1 {
   float: left;
 }
+
 .order-321 .order-123 .col-1 {
   float: left;
 }
@@ -119,9 +123,15 @@ body {
   float: left;
 }
 .order-231 .columns .col-1 {
+  float: right;
+}
+.order-231 .order-123 .col-1 {
   float: left;
 }
-.order-231 .order-321 .col-1 {
+.order-231 .order-312 .col-1 {
+  float: left;
+}
+/*.order-231 .order-321 .col-1 {
   float: right;
 }
 .order-231 .order-213 .col-1 {
@@ -132,11 +142,9 @@ body {
 }
 .order-231 .order-132 .col-2 {
   float: right;
-}
+}*/
 
-.columns .columns .intercolumn {
-   float: left; 
-}
+
 .columns .order-312 .intercolumn {
   float: right;
 }
