@@ -114,6 +114,9 @@ body {
 }
 */
 
+.order-213 .order-123 .col-1 {
+  float: left;
+}
 
 .order-132 .order-231 .col-2 {
   float: left;
