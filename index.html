@@ -63,10 +63,6 @@
       <a href="#231">231</a>
     </div>
     
-    <h3>Loop through the layouts:</h3>
-    <button type='button' id='startButton'>start loop</button>
-    <button type='button' id='stopButton'>stop loop</button>    
-
     <div class='demo'>
     
       <h2>simple three-column css</h2>
@@ -278,46 +274,7 @@
           orders.attachEvent('onclick', showOrder);
         }
         
-        // loop buttons
-        
-        var order = ['123', '132', '213', '231', '312', '321'];
-        
-        var o = 0;
-        var t = 0;
-        
-        function loop() {
-          var test = tests[t++];
-          test.className = test.className.replace(/order-[\w]{3,3}/, 'order-' + order[o++]);
-          o < order.length || (o = 0);
-          t < tests.length || (t = 0);
-        }
-        
-        var interval;
-        
-        function startLoop() {
-          interval = setInterval(loop, 500);
-          startButton.disabled = true;
-          stopButton.disabled = false;
-        }
-        
-        function stopLoop() {
-          clearInterval(interval);
-          interval = null;
-          stopButton.disabled = true;
-          startButton.disabled = false;        
-        }
-        
-        var startButton = document.getElementById('startButton');
-        var stopButton = document.getElementById('stopButton');
-        
-        if (startButton.addEventListener) {
-          startButton.addEventListener('click', startLoop, false);
-          stopButton.addEventListener('click', stopLoop, false);
-        } else if (startButton.attachEvent) {
-          startButton.attachEvent('onclick', startLoop);
-          stopButton.attachEvent('onclick', stopLoop);
-        }
-        
+
       }());
     </script>
   </body>
