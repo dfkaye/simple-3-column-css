@@ -94,6 +94,7 @@ body {
 .columns .columns .intercolumn {
   float: left; 
 }
+
 .columns .order-132 .intercolumn {
   float: none;
 }
@@ -123,18 +124,21 @@ body {
 .order-321 .columns .col-1 {
   float: right;
 }
+.order-321 .order-123 .col-1 {
+  float: left;
+}
 
-.order-231 .columns .col-1 {
+.columns .order-231  .col-1 {
   float: right;
 }
-.order-231 .order-123 .col-1 {
-  float: left;
+.order-231 .order-321 .col-1 {
+  float: right;
 }
-.order-231 .order-312 .col-1 {
-  float: left;
+.order-231 .order-213 .col-1 {
+  float: right;
 }
-.order-231 .order-132 .col-1 {
-  float: left;
+.order-231 .order-231 .col-1 {
+  float: right;
 }
 
 
@@ -146,7 +150,6 @@ body {
 .columns .order-132 .col-2 {
   float: right;
 }
-
-.order-132 .order-231 .col-2 {
-  float: left;
+.columns .order-321 .col-2 {
+  float: right;
 }
