@@ -7,7 +7,7 @@
     <link rel='stylesheet' href='./css/test-page.css' />
   </head>
   <body>
-    <h1>three-column css layout</h1>
+    <h1>three-column re-orderable css layout</h1>
 
     <p>
       disclaimer ~ yes, I know it looks like an apache commons site circa 1999 :)
@@ -16,9 +16,8 @@
     <h2>goal</h2>
     
     <p>
-      Goal is to create a three-column markup with classes that need no changing 
-      to re-order the columns.  Well, *one* container element's class must change,
-      to allow the cascade/specifity to do the re-ordering.
+      Create a three-column html layout that re-orders when container's css class is
+      changed, i.e., allow the cascade/specifity to do the re-ordering.
     </p>
 
     <p>
@@ -54,7 +53,7 @@
       </a>
     </p>
 
-    <h3>View the basic layouts:</h3>
+    <h3>View the re-ordered layouts:</h3>
     <div id='orders'>
       <a href="#123">123</a>
       <a href="#132">132</a>
@@ -88,7 +87,7 @@
         </div>
       </div>
 
-      <h2>nested three-column css - experimental</h2>
+      <h2>nested three-column css</h2>
       <p>
         This test works cross-browser back to IE7 (IE6 requires underscore hacks to fix the old
         "doubled margins in floated elements" bug - no, thanks).  
