@@ -1,7 +1,21 @@
 /* 3-column.css */
 /* Use this CSS to specify 3-column layout, changing only the order-x-y-z class in the content wrapper div: */
 
+/* You'll need this for the floated layout clearing problems: */
+
+.clearfix {
+  clear: both;
+}
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
 /* 3-column layouts for content area */
+
 .columns {
   /* set width to contain intercolumn and .col-3 */
 }
@@ -59,17 +73,4 @@
 }
 .order-321 .col-1 {
   float: right;
-}
-    
-/* You'll need this for the floated layout clearing problems: */
-
-.clearfix {
-  clear: both;
-}
-.clearfix:after {
-  content: ".";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
 }
