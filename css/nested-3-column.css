@@ -1,0 +1,53 @@
+/* nested .intercolumn float resets */
+
+.columns .columns .intercolumn {
+  float: left; 
+}
+.columns .order-132 .intercolumn {
+  float: none; /* unset width for non-contiguous case */
+}
+.columns .order-231 .intercolumn {
+  float: none; /* unset width for non-contiguous case */
+}
+.columns .order-312 .intercolumn {
+  float: right;
+}
+.columns .order-321 .intercolumn {
+  float: right;
+}
+
+/* nested .col-1 float resets */
+
+.columns .columns .col-1 {
+  float: left; 
+}
+.columns .order-213 .col-1 {
+  float: right;
+}
+.columns .order-231 .col-1 {
+  float: right;
+}
+.columns .order-321 .col-1 {
+  float: right;
+}
+.order-321 .order-123 .col-1 {
+  float: left;
+}
+.order-321 .order-132 .col-1 {
+  float: left;
+}
+.order-321 .order-312 .col-1 {
+  float: left;
+}
+
+/* nested .col-2 float resets */
+
+.columns .columns .col-2 {
+  float: left; 
+}
+.columns .order-132 .col-2 {
+  float: right;
+}
+.columns .order-321 .col-2 {
+  float: right;
+}
