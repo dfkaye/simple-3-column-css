@@ -1,4 +1,5 @@
 /* overrides for specific page layout */
+
 body {
   font-family: verdana, arial, sans-serif;
   font-size: 0.75em;
@@ -17,8 +18,8 @@ body {
 }
 
 /* 3-column layouts for content area */
+
 .columns {
-  border: 1px solid #666;
   margin: 1em 0;
   width: 85em; /* set width to contain intercolumn and .col-3 */
 }
@@ -28,27 +29,25 @@ body {
 }
 .col-1 {
   background: #fcf;
-  border: 1px solid #ccc;
   width: 45em;
 }
 .col-2 {
   background: #cff9f9;
-  border: 1px solid #ccc;
   width: 19em;
 }
 .col-3 {
   background: #fff0c0;
-  border: 1px solid #ccc;
   width: 19em;
 }
 
-/* expand widths for nested test columns */
+
+/* expand widths for nested .columns */
 
 .columns .columns {
   width: 99%;
 }
 
-/* .nested .nested specific widths */
+/* nested .columns, default column widths */
 
 .columns .columns .intercolumn {
   width: 64%;
@@ -63,10 +62,10 @@ body {
   width: 35%;
 }
 
-/* .nested .order-132 specific widths */
+/* nested .order-132 column widths */
 
 .columns .order-132 .intercolumn {
-  width: auto;
+  width: auto; /* unset width for non-contiguous case */
 }
 .columns .order-132 .col-1 {
   width: 35%;
@@ -75,11 +74,10 @@ body {
   width: 25%;
 }
 
-
-/* .nested .order-231 specific widths */
+/* nested .order-231 column widths */
 
 .columns .order-231 .intercolumn {
-  width: auto;
+  width: auto; /* unset width for non-contiguous case */
 }
 .columns .order-231 .col-1 {
   width: 35%;
@@ -89,17 +87,16 @@ body {
 }
 
 
-/* nested .intercolumn */
+/* nested .intercolumn float resets */
 
 .columns .columns .intercolumn {
   float: left; 
 }
-
 .columns .order-132 .intercolumn {
-  float: none;
+  float: none; /* unset width for non-contiguous case */
 }
 .columns .order-231 .intercolumn {
-  float: none;
+  float: none; /* unset width for non-contiguous case */
 }
 .columns .order-312 .intercolumn {
   float: right;
@@ -108,12 +105,12 @@ body {
   float: right;
 }
 
-/* nested .col-1 */
+
+/* nested .col-1 float resets */
 
 .columns .columns .col-1 {
   float: left; 
 }
-
 .columns .order-213 .col-1 {
   float: right;
 }
@@ -123,7 +120,6 @@ body {
 .columns .order-321 .col-1 {
   float: right;
 }
-
 .order-321 .order-123 .col-1 {
   float: left;
 }
@@ -135,7 +131,7 @@ body {
 }
 
 
-/* nested .col-2 */
+/* nested .col-2 float resets */
 
 .columns .columns .col-2 {
   float: left; 
