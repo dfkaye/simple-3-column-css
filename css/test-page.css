@@ -113,6 +113,10 @@ body {
 .columns .columns .col-1 {
   float: left; 
 }
+
+.columns .order-213 .col-1 {
+  float: right;
+}
 .columns .order-231 .col-1 {
   float: right;
 }
@@ -120,44 +124,16 @@ body {
   float: right;
 }
 
-.order-321 .order-213 .col-1 {
-  float: right;
-}
 .order-321 .order-123 .col-1 {
-  float: left;
-}
-.order-321 .order-312 .col-1 {
   float: left;
 }
 .order-321 .order-132 .col-1 {
   float: left;
 }
-
-.order-312 .order-213 .col-1 {
-  float: right;
+.order-321 .order-312 .col-1 {
+  float: left;
 }
 
-.order-123 .order-213 .col-1 {
-  float: right;
-}
-
-.order-213 .order-213 .col-1 {
-  float: right;
-}
-
-.order-231 .order-321 .col-1 {
-  float: right;
-}
-.order-231 .order-213 .col-1 {
-  float: right;
-}
-.order-231 .order-231 .col-1 {
-  float: right;
-}
-
-.order-132 .order-213 .col-1 {
-  float: right;
-}
 
 /* nested .col-2 */
 
