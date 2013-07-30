@@ -137,7 +137,7 @@ body {
 
 /* nested .col-2 */
 
-.columns .col-2 {
+.columns .columns .col-2 {
   float: left; 
 }
 .columns .order-132 .col-2 {
