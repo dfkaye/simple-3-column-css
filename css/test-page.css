@@ -24,13 +24,13 @@ body {
   margin: 1em 0;
   /* set width to contain intercolumn and .col-3; 
       else leave auto for liquid layout */
-  /*width: 85em;*/
+  width: 85em;
 }
 .intercolumn {
   /* contains columns 1 and 2 */
   /* set width to contain col-1 and .col-2; 
     else leave auto for liquid layout */
-  /*width: 65em;*/
+  width: 65em;
 }
 .col-1 {
   background: #fcf;
