@@ -22,8 +22,8 @@ key factors
 + Solution requires float-based layouts (plus a clearfix) - makes IE6 harder because of the old "doubled margins
     in floated elements" bug we used to love.
 + Columns 1 and 2 need to be wrapped by an "intercolumn" element, with column 3 a sibling after that 
-    (insight from Michael Bowers, 
-        [Pro CSS and HTML Design Patterns](http://www.amazon.com/Pro-CSS-HTML-Design-Patterns/dp/1590598040/).
+    (see p. 94, Brian Henick, 
+        [HTML and CSS: The Good Parts](http://www.amazon.com/dp/0596157606), O'Reilly', 2010).
 + Change only the order-{XYZ} class in the "columns" div.
 + Specify actual widths of each column and intercolumn (which contains cols 1 and 2) in a separate 
     layout-specific or page-specific css file.
@@ -31,7 +31,7 @@ key factors
 given this markup:
 -----------------
 
-    <div id="simple" class="clearfix columns order-xyz">
+    <div id="simple" class="clearfix columns order-{XYZ}">
       <div class="intercolumn">
         <div class="col-1">
           <h1>1. main section</h1>
