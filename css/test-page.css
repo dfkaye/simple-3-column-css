@@ -32,6 +32,12 @@ body {
     else leave auto for liquid layout */
   width: 65em;
 }
+
+.col {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 .col-1 {
   background: #fcf;
   width: 45em;
@@ -90,3 +96,4 @@ body {
 .columns .order-231 .col-2 {
   width: 25%;
 }
+
