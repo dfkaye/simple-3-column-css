@@ -11,7 +11,7 @@ Given one set of markup, one set of CSS, change one CSS class name in the markup
 example
 -------
 
-View the [working example](http://rawgithub.com/dfkaye/simple-3-column-css/master/index.html)
+View the <a href='http://rawgithub.com/dfkaye/simple-3-column-css/master/index.html' target='_new'>working example</a>
 
 + The basic layout works fine cross-browser, back to IE6.
 + Nesting 3-col inside another 3-col requires longer (more specific) CSS selectors to override widths, etc.
