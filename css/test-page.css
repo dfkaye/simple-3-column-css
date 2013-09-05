@@ -14,60 +14,69 @@ body {
 }
 
 .demo {
-  margin: 1em 0;
+  margin: 1em;
 }
 
 /* base styles for columns */
 
 .columns {
-  border: 1px solid #ccc;
-  margin: 1em 0;
   /* set width to contain intercolumn and .col-3; 
       else leave auto for liquid layout */
-  width: 85em;
+  width: 94em;
 }
+
 .intercolumn {
   /* contains columns 1 and 2 */
   /* set width to contain col-1 and .col-2; 
     else leave auto for liquid layout */
-  width: 65em;
+  width:  65em; 
+    /*width: 60%;*/
 }
 
 .col {
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 0.5em;
+  margin: 0.5em;
+  padding: 0.5em;
 }
 
 .col-1 {
   background: #fcf;
-  width: 45em;
-}
-.col-2 {
-  background: #cff9f9;
-  width: 19em;
-}
-.col-3 {
-  background: #fff0c0;
-  width: 19em;
+  width: 35em;
 }
 
+.col-2 {
+  background: #cff9f9;
+  width: 27em;
+}
+
+.col-3 {
+  background: #fff0c0;
+  width: 27em;
+}
 
 /* expand widths for nested .columns */
 
 .columns .columns {
   width: 99%;
+  border: 0;
+}
+
+.columns .col {
+  margin: 0.25em;
+  padding: 0.25em;
 }
 
 /* base styles for nested columns */
 
 .columns .columns .intercolumn {
-  width: 64%;
+  width: 60%;
 }
 .columns .columns .col-1 {
-  width: 57%;
+  width: 50%;
 }
 .columns .columns .col-2 {
-  width: 40%;
+  width: 35%;
 }
 .columns .columns .col-3 {
   width: 35%;
@@ -79,10 +88,10 @@ body {
   width: auto; /* unset width for non-contiguous case */
 }
 .columns .order-132 .col-1 {
-  width: 35%;
+  width: 29%;
 }
 .columns .order-132 .col-2 {
-  width: 25%;
+  width: 22%;
 }
 
 /* nested .order-231 */
@@ -91,9 +100,8 @@ body {
   width: auto; /* unset width for non-contiguous case */
 }
 .columns .order-231 .col-1 {
-  width: 35%;
+  width: 29%;
 }
 .columns .order-231 .col-2 {
-  width: 25%;
+  width: 22%;
 }
-
